@@ -134,7 +134,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
             this.button1.Location = new System.Drawing.Point(436, 426);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 34);
+            this.button1.Size = new System.Drawing.Size(157, 71);
             this.button1.TabIndex = 3;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
