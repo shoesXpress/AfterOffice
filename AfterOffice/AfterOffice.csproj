@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{572ED58A-0B4E-4A6D-8D09-FE2B922C04D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AfterOffice</RootNamespace>
+    <AssemblyName>AfterOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alerta registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alerta registro.Designer.cs">
+      <DependentUpon>alerta registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar Evento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar Evento.Designer.cs">
+      <DependentUpon>Buscar Evento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar Local.Designer.cs">
+      <DependentUpon>Buscar Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar.Designer.cs">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarContenido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarContenido.Designer.cs">
+      <DependentUpon>BuscarContenido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crearContenido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crearContenido.Designer.cs">
+      <DependentUpon>crearContenido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Local.Designer.cs">
+      <DependentUpon>Modificar Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar.Designer.cs">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarContenido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarContenido.Designer.cs">
+      <DependentUpon>ModificarContenido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar Local.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar Local.Designer.cs">
+      <DependentUpon>Registrar Local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar.Designer.cs">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informacion.Designer.cs">
+      <DependentUpon>informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alerta.Designer.cs">
+      <DependentUpon>Alerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="alerta registro.resx">
+      <DependentUpon>alerta registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar Evento.resx">
+      <DependentUpon>Buscar Evento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar Local.resx">
+      <DependentUpon>Buscar Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar.resx">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarContenido.resx">
+      <DependentUpon>BuscarContenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crearContenido.resx">
+      <DependentUpon>crearContenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Local.resx">
+      <DependentUpon>Modificar Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar.resx">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarContenido.resx">
+      <DependentUpon>ModificarContenido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar Local.resx">
+      <DependentUpon>Registrar Local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar.resx">
+      <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informacion.resx">
+      <DependentUpon>informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alerta.resx">
+      <DependentUpon>Alerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peroni-after-office-9a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\After-Office-29-650x433.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
